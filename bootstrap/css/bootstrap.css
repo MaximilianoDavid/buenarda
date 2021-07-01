@@ -3458,7 +3458,7 @@ textarea.form-control-lg {
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
-  left: 0;
+  right: 0;
   margin-top: 0.125rem;
 }
 
@@ -4414,11 +4414,11 @@ textarea.form-control-lg {
 }
 .accordion-button:not(.collapsed) {
     color: #ffffff;
-    background-color: #aa3c3ba6;
+    background-color: #aa3c3b;
     box-shadow: inset 0 -1px 0 rgb(29 31 29 / 0%);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   transform: rotate(-180deg);
 }
 .accordion-button::after {
@@ -4442,9 +4442,9 @@ textarea.form-control-lg {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #86b7fe;
+  border-color: #fd313180;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem rgb(253 49 49 / 50%);
 }
 
 .accordion-header {
@@ -5872,22 +5872,24 @@ textarea.form-control-lg {
   list-style: none;
 }
 .carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: 0.5;
-  transition: opacity 0.6s ease;
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 11px;
+    height: 0px;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #aa3c3b;
+    border: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 4px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-indicators [data-bs-target] {

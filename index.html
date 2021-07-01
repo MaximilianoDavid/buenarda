@@ -13,30 +13,31 @@
         <!--fontawesome-->
         <script src="https://kit.fontawesome.com/886cb9f97e.js" crossorigin="anonymous"></script>
         <!--fontawesome-->
+         <!--fancy-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+         <!--fancy-->
     </head>
     
  <body> 
      
     
-<header>
+<header class="ease-in-out">
     
     <div class="logo">
       <img src="images/logo.png" class="logo">   
     </div>
-    
-    <button onclick="nav()" class="nav-hide btn btn-primary"><i class="fas fa-bars"></i></button>
-    
-    <nav class="navbar" id="navbarmenu">
+
+    <nav class="navbar">
        <ul class="nav">
             <li class="nav-item"><a href="index.html" class="nav-link-new">Inicio</a></li>
             <li class="nav-item"><a href="catalogo.html" class="nav-link-new">Catalogo</a></li>
             <li class="nav-item"><a href="#" class="nav-link-new">Empresa</a></li>
           <!--<li class="nav-item"><a href="#" class="nav-link-new">Envios</a></li>-->
-            <li class="nav-item"><a href="#contact" class="nav-link-new">Contacto</a></li>  
-      </ul> 
-       <div class="cart"> 
+            <li class="nav-item"><a href="#contact" class="nav-link-new">Contacto</a></li>
+           
+             <div class="cart">
       <div class="dropdown">
-        <button type="button" class="btn cart btn-primary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        <button type="button" class="btn button-cart btn-primary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
         <i class="fas fa-shopping-cart"></i>
         </button>  
 
@@ -46,7 +47,9 @@
         <li><a class="dropdown-item" href="#scrollspyHeading5">Total : 0.00</a></li>
       </ul>
     </div>
-    </div>  
+    </div>
+           
+      </ul>     
     </nav>
     
 </header>  
@@ -86,77 +89,82 @@
 
     
     <div class="card">
-       <img src="images/cards/catalogo.svg" alt="...">
-          <h2>catalogo</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+       <img src="images/cards/catalogo.svg" alt="..." class="shadow">
+          <a>catalogo</a>
+            <p>Te invitamos a observar nuestro catalogo de marcas exclusivas.</p>
             <p><a class="btn btn-secondary" href="#">Ver catalogo »</a></p>
     </div>
     
     <div class="card">
-      <img src="images/cards/club.svg" alt="...">
-        <h2>Club del vino</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="#">Ingresar al club »</a></p>
+      <img src="images/cards/club.svg" alt="..." class="shadow">
+        <a>Club del vino</a>
+            <p>Ingresa al club, y participa de grandes premios y descuentos.</p>
+            <p><a class="btn btn-secondary" href="#">Ingresar »</a></p>
  
 </div>
     <div class="card">
-  <img src="images/cards/somos.svg" alt="...">
-        <h2>Quienes somos</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="#">Ingresar »</a></p>
+  <img src="images/cards/somos.svg" alt="..." class="shadow">
+        <a>Quienes somos</a>
+            <p>Te contamos como se fundo y se forma nuestra empresa familiar.</p>
+            <p><a class="btn btn-secondary" href="#">Conoce »</a></p>
 
 </div>
     <div class="card">
-  <img src="images/cards/tienda.svg" alt="...">
-        <h2>tienda</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+  <img src="images/cards/tienda.svg" alt="..." class="shadow">
+        <a>tienda</a>
+            <p>Compra en la tienda, y te lo llevamos a tu domicilio.</p>
             <p><a class="btn btn-secondary" href="#">Ir a tienda »</a></p>
 
 </div>
 </section>
     
 </main>     
-
+     
 <footer>
      <section class="box-about">
     <div class="about">
-         <h4 class="text-uppercase fw-bold mb-4">Ubicacion</h4>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d26802.717876699793!2d-68.83022929577874!3d-32.889184792779254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x967e09194fca9523%3A0x7c46c3cdfb636097!2sNecochea%20%26%209%20de%20Julio%2C%20Mendoza!3m2!1d-32.8871932!2d-68.8398966!4m5!1s0x967e0ee9b76ca0f7%3A0x67adf579c56fdc99!2sAvellaneda%202221%2C%20M5521%20KFY%2C%20Mendoza!3m2!1d-32.885672!2d-68.78528299999999!5e0!3m2!1ses-419!2sar!4v1623900427162!5m2!1ses-419!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+         <h6 class="text-uppercase fw-bold mb-4">Ubicacion</h6>
+        <p><i class="fas fa-home me-3"></i>Tirasso 2131 -
+        Mendoza AR</p>
+         <button class="btn btn-secondary">Como llegar</button>
     </div>
     </section>
     
     <section class="box-links">
-    <h4 class="text-uppercase fw-bold mb-4">Ayuda</h4>
-        <p><a href="#!" class="text-reset">Help</a></p>
-        <p><a href="#!" class="text-reset">Help</a></p>
-        <p><a href="#!" class="text-reset">Help</a></p>
-        <p><a href="#!" class="text-reset">Help</a></p>
+    <h6 class="text-uppercase fw-bold mb-4">FAQ</h6>
+        <p><a href="#!" class="text-reset">Consultas</a></p>
+        <p><a href="#!" class="text-reset">Vende nuestros productos</a></p>
+        <p><a href="#!" class="text-reset">Aministracion</a></p>
+        <p><a href="#!" class="text-reset">Trabaja con nosotros</a></p>
     </section>
     
     
      <section class="box-contact" id="contact">
     <div class="contact">
-         <h4 class="text-uppercase fw-bold mb-4">Contacto</h4>
-           <p><i class="fas fa-home me-3"></i>Mendoza,5001, AR</p>
+         <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
            <p><i class="fas fa-envelope me-3"></i>buenarda@admin.com</p>
            <p><i class="fas fa-phone me-3"></i>+ 54 261 567 88</p>
            <p><i class="fas fa-print me-3"></i>+ 54 261 567 89</p>
          </div>
     </section>
     <section class="box-social-icons">
-          <h5 class="text-uppercase fw-bold mb-4"><i class="fas fa-bullhorn"></i> Seguinos</h5>
             <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              <li><a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>   
             </ul>
+    </section>
+    
+    <section>
+    <div class="footer-copyright">Copyright © 2021 , All rights reserved.</div>
     </section>
 </footer>
       
 </body>
-    
+        
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>    
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     
 </html>
