@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title>Inicio</title>
+        <title>Empresa</title>
         <!--Meta-->
         <meta itemprop="name" content="Bodega Buenarda">
         <meta itemprop="description" content="Mendoza - Argentina">
@@ -28,30 +28,30 @@
     </head>
     
  <body> 
-     
-    
+      
 <header class="ease-in-out">
-     
-      <img src="images/logo.png" class="logo">   
+    
+    <img src="images/logo.png" class="logo">   
    
-      <a class="nav-toggle btn btn-primary" id="bars">
+    <a class="nav-toggle btn btn-primary" onclick="nav()">
          <i class="fas fa-bars"></i>
        </a>  
 
-      <nav class="navbar">
-       <ul class="nav" id="nav">
-            <li class="nav-item active"><a href="index.html" class="nav-link-new">Inicio</a></li>
+    <nav class="navbar">
+       <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link-new">Inicio</a></li>
             <li class="nav-item"><a href="catalogo.html" class="nav-link-new">Catalogo</a></li>
-            <li class="nav-item"><a href="empresa.html" class="nav-link-new">Empresa</a></li>
+            <li class="nav-item active"><a href="empresa.html" class="nav-link-new">Empresa</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link-new">Contacto</a></li>
-       </ul>
-
-    <div class="cart-login">
+       </ul>     
+    
+    
+     <div class="cart-login">
       <div class="cart">
-      <div class="dropdown">
-        <button type="button" class="btn button-cart btn-primary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-        <i class="fas fa-shopping-cart"></i>
-        </button>  
+          <div class="dropdown">
+              <button type="button" class="btn button-cart btn-primary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  <i class="fas fa-shopping-cart"></i>
+              </button>  
 
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#scrollspyHeading2">Productos</a></li>
@@ -62,93 +62,17 @@
 </div>   
       <div class="login">
           <button class="btn button-login btn-primary" href="ingresar.html" data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "380px" , "height" : "640px"}}}'><i class="fas fa-sign-in-alt"></i></button>
-      </div>        
+      </div>       
     </div>
-    </nav>   
+    
+    </nav>
     
 </header>  
-     
- <script>
-     /*nav-collage*/
-
-function abrir(){     
-     
-let bars = document.getElementById('bars');
-
-let nav = document.getElementById('nav');
-
-    
-bars.addEventListener('click', 
-function(){nav.style.display = "flex";})    
-    
-
-}
-     </script>    
-     
-     
 
 <main data-aos="fade">
     
-<section class="carousel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/carousel/image1.png" class="d-block w-100" alt="images/carousel/image1.png">
-    </div>
-    <div class="carousel-item">
-      <img src="images/carousel/image2.png" class="d-block w-100" alt="images/carousel/image2.png">
-    </div>
-    <div class="carousel-item">
-      <img src="images/carousel/image3.png" class="d-block w-100" alt="images/carousel/image3.png">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</section>
+<section>
     
-<section class="box-marketing">
-
-    
-    <div class="card" data-aos="zoom-in-up">
-       <img src="images/cards/catalogo.svg" alt="..." class="shadow">
-          <a>catalogo</a>
-            <p>Te invitamos a observar nuestro catalogo de marcas exclusivas.</p>
-            <p><a class="btn btn-secondary" href="catalogo.html">Ver catalogo »</a></p>
-    </div>
-    
-    <div class="card" data-aos="zoom-in-up">
-      <img src="images/cards/club.svg" alt="..." class="shadow">
-        <a>Club del vino</a>
-            <p>Ingresa al club, y participa de grandes premios y descuentos.</p>
-            <p><a class="btn btn-secondary" href="#">Ingresar »</a></p>
- 
-</div>
-    <div class="card" data-aos="zoom-in-up">
-  <img src="images/cards/somos.svg" alt="..." class="shadow">
-        <a>Nuestra Empresa</a>
-            <p>Te contamos como se fundo y se forma nuestra empresa familiar.</p>
-            <p><a class="btn btn-secondary" href="empresa.html">Conoce »</a></p>
-
-</div>
-    <div class="card" data-aos="zoom-in-up">
-  <img src="images/cards/tienda.svg" alt="..." class="shadow">
-        <a>Tienda</a>
-            <p>Compra en la tienda, y te lo llevamos a tu domicilio.</p>
-            <p><a class="btn btn-secondary" href="catalogo.html">Ir a tienda »</a></p>
-
-</div>
 </section>
     
 </main>     

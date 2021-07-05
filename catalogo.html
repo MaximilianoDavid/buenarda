@@ -5,7 +5,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title>Shop-Vinos</title>
+        <title>Catalogo</title>
+        <!--Meta-->
+        <meta itemprop="name" content="Bodega Buenarda">
+        <meta itemprop="description" content="Mendoza - Argentina">
+        <meta itemprop="image" content="images/log.png">
+        <meta property="og:image" content="images/log.png">      
+        <link rel="shortcut icon" href="images/icon.ico">
+        <!--AOS-->
+        <link rel="stylesheet" href="aos/aos.css">
+        <!--AOS-->
         <!--Bootstrap-->
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
         <!--Bootstrap-->
@@ -19,32 +28,27 @@
     </head>
     
  <body> 
-  
     
     
 <header class="ease-in-out">
     
-    
-<div class="logo">
-      <img src="images/logo.png" class="logo">   
-    </div>
+    <img src="images/logo.png" class="logo"> 
     
     <a class="nav-toggle btn btn-primary" onclick="nav()">
     <i class="fas fa-bars"></i>
 </a>  
     
-    <nav class="navbar" id="nav">
+    <nav class="navbar">
        <ul class="nav">
             <li class="nav-item"><a href="index.html" class="nav-link-new">Inicio</a></li>
-            <li class="nav-item"><a href="catalogo.html" class="nav-link-new">Catalogo</a></li>
-            <li class="nav-item"><a href="#" class="nav-link-new">Empresa</a></li>
-          <!--<li class="nav-item"><a href="#" class="nav-link-new">Envios</a></li>-->
+            <li class="nav-item active"><a href="catalogo.html" class="nav-link-new">Catalogo</a></li>
+            <li class="nav-item"><a href="empresa.html" class="nav-link-new">Empresa</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link-new">Contacto</a></li>    
-      </ul>     
-    </nav>
-    
-    <div class="cart">
-    <div class="dropdown">
+      </ul> 
+        
+    <div class="cart-login">
+      <div class="cart">
+      <div class="dropdown">
         <button type="button" class="btn button-cart btn-primary dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
         <i class="fas fa-shopping-cart"></i>
         </button>  
@@ -55,28 +59,19 @@
         <li><a class="dropdown-item" href="#scrollspyHeading5">Total : 0.00</a></li>
       </ul>
     </div>
-</div>
+</div>   
+      <div class="login">
+          <button class="btn button-login btn-primary" href="ingresar.html" data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "380px" , "height" : "640px"}}}'><i class="fas fa-sign-in-alt"></i></button>
+      </div>       
+    </div>    
+        
+    </nav>
     
+      
 </header>  
-     
-     <script>
-         function nav() {
-            
-             if (document.getElementById("nav").getAttribute = "navbar"){
-                 
-                 document.getElementById("nav").setAttribute("class","navbar-hide")
-                 
-             }
-         }
-         
-       
-     </script>   
-     
-     
 
-<main>
+<main data-aos="fade">
      
-
 <div class="title-search">
         <h4>Catalogo</h4> 
         <form class="d-flex">
@@ -89,11 +84,11 @@
              
 <section class="catalogo" id="catalogo">
 
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -125,12 +120,12 @@
     </div>   
 </div>
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs">
-               <span class="badge bg-danger">NEW</span>
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-danger">Nuevo</span>
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -163,11 +158,11 @@
     </div>   
 </div>    
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -201,11 +196,11 @@
     </div>   
 </div>
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -240,11 +235,11 @@
     </div>   
 </div>
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -280,11 +275,11 @@
     </div>   
 </div>
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -319,11 +314,11 @@
     </div>   
 </div>    
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -357,11 +352,11 @@
     </div>   
 </div>
     
-    <div class="box-product">  
+    <div class="box-product" data-aos="zoom-in">  
     <div class="card-body">
         
         <div class="card-mjs"> 
-               <span class="badge bg-success">20% SALE</span> 
+               <span class="badge bg-success">20% Descuento</span> 
             </div>
         
         <div class=" card-img-product">
@@ -396,11 +391,11 @@
          
 </section>
    
-<aside class="aside">
+<aside class="aside" data-aos="zoom-out-left">
     
 <div class="aside-category">
     <h6 class="text-uppercase mb-4">Categorias</h6>
-       <div class="wine accordion accordion-flush" id="accordionFlushExample">
+       <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
               <h5 class="accordion-header" id="flush-headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">VINOS CLASICOS
@@ -449,25 +444,22 @@
     
 </main>    
 
-
-<footer>
-     <section class="box-about">
+<footer data-aos="fade">
+    <section class="box-about">
     <div class="about">
          <h6 class="text-uppercase fw-bold mb-4">Ubicacion</h6>
-        <p><i class="fas fa-home me-3"></i>Tirasso 2131 -
-        Mendoza AR</p>
-         <button class="btn btn-secondary">Como llegar</button>
-    </div>
+           <p><i class="fas fa-map-marker-alt"></i> Tirasso 2131, Rodeo de la Cruz</p>
+           <p>Mendoza - Argentina</p>
+        <button class="btn btn-secondary" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.1037762859587!2d-68.75898554926684!3d-32.895424376533555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0e63a1d39ae5%3A0x2e65cf3a79c3313c!2sTirasso%202131%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1625268412529!5m2!1ses!2sar"  data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "600px"}}}'>Como llegar</button>
+   </div>
     </section>
     
-    <section class="box-links">
+     <section class="box-links">
     <h6 class="text-uppercase fw-bold mb-4">FAQ</h6>
         <p><a href="#!" class="text-reset">Consultas</a></p>
-        <p><a href="#!" class="text-reset">Vende nuestros productos</a></p>
         <p><a href="#!" class="text-reset">Aministracion</a></p>
         <p><a href="#!" class="text-reset">Trabaja con nosotros</a></p>
     </section>
-    
     
      <section class="box-contact" id="contact">
     <div class="contact">
@@ -477,26 +469,30 @@
            <p><i class="fas fa-print me-3"></i>+ 54 261 567 89</p>
          </div>
     </section>
-    <section class="box-social-icons">
+    
+     <section class="box-social-icons">
             <ul class="social-icons">
-              <li><a class="facebook" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="twitter" href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="instagram" href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="https://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>   
+              <li><a class="facebook" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="instagram" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="whatsapp" href="https://api.whatsapp.com/send?phone=+5426156789" target="_blank"><i class="fa fa-whatsapp"></i></a></li>   
             </ul>
     </section>
     
-    <section>
-    <div class="footer-copyright">Copyright © 2021 , All rights reserved.</div>
+     <section class="footer-about-copyright">
+        <div class="footer-about">Un proyecto de @MBustos</div>
+        <div class="footer-copyright">
+            <a href="https://potrerodigital.org" target="_blank">
+                <img class="potrero" id="potrero" src="images/potrerog.png"></a> © 2021
+            </div>       
     </section>
 </footer>
+     
       
 </body>
-        
-        
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>    
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
-    
+        <script src="aos/aos.js"></script>
+        <script src="js/style.js"></script>
+        <script src="fancybox/dist/jquery3.5.1.min.js"></script>
+        <script src="fancybox/dist/jquery.fancybox.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script>  
 </html>
