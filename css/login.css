@@ -97,3 +97,8 @@ form-label{
     flex-wrap: nowrap;
     align-items: baseline;
 }
+
+.about_form {
+    display: flex;
+    justify-content: center;
+}

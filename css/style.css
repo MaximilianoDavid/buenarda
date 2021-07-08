@@ -45,7 +45,7 @@ body{
 }
 
 .logo{
-    width: 20%;
+    width: 40%;
 }
 
 .navbar > ul > li > a:hover {
@@ -54,15 +54,22 @@ body{
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
     background-color: #f8f9fa;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 1px solid #aa3c3b8a;
 }
 
-.navbar{
+.navbar_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -70,14 +77,21 @@ header {
     list-style: none;
     padding: 10px;
     align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
+
+.show{
+    display: none;
+}
+
 
 .cart-login{display: flex;}
 .navbar-hide{display: none;}
 
-.nav{
+.nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -232,7 +246,7 @@ footer {
 .page {
     display: flex;
     align-items: flex-start;
-    width: 97%;
+    width: 100%;
 }
 
 
@@ -249,6 +263,7 @@ footer {
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
+    width: 80%;
 }
 
 .box-product {
@@ -322,12 +337,15 @@ aside {
     text-align: center;
     margin: 10px;
     font-size: 12px;
+    width: 230px;
 }
 .accordion-button{
     font-size: 12px;
 }
  
-
+.menu_hide{
+    display: none;
+}
 
 @media screen and (max-width: 1038px){
   
@@ -427,9 +445,18 @@ aside {
 }
 
 @media screen and (max-width: 895px){
+
     .logo{
+        width: 100%
+    }    
+    
+    
+.navbar_bar {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    }
+    align-items: center;
+}
     header{
     display: flex;
     justify-content: center;
@@ -519,9 +546,32 @@ aside {
 
 @media screen and (max-width: 765px){
     
-.nav-toggle{
+.logo {
+    width: 50%;
+}
+    
+.nav-toggle {
     display: block;
-    margin: 10px;
+    margin: 15px;
+}
+    
+.navbar_bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}   
+       
+.mobile_logo_toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.mobile_nav{   
+    
+    width: 100%;
 }    
     
 .page {
@@ -531,14 +581,14 @@ aside {
 }    
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     background: #f8f9fa;
     width: 100%;
     border-bottom: 1px solid #c3c3c3;
     align-items: stretch;
     flex-direction: column;
-} 
+}
     
 .navbar {
     position: relative;
@@ -547,13 +597,13 @@ header {
     flex-direction: column;
     font-size: 20px;
     list-style: none;
-    padding: 10px;
     align-content: center;
     justify-content: space-around;
+    width: 100%;
 }    
   
 .nav {
-    display: none;
+    display: flex;
     flex-wrap: nowrap;
     padding-left: 0;
     margin-bottom: 0;
@@ -602,17 +652,7 @@ aside {
 }    
 
 @media screen and (max-width: 650px){
-header {
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    background: #f8f9fa;
-    width: 100%;
-    border-bottom: 1px solid #c3c3c3;
-    flex-direction: column;
-    align-content: flex-start;
-}
-
+     
     
 .button-cart , .button-login {
     margin-left: 5px;
@@ -629,36 +669,32 @@ header {
 } 
 
 }
-/*
+
 @media screen and (max-width: 500px){
-.logo{
-    width: 100%;
-}
-    
-.page {
+  
+header {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #f8f9fa;
+    width: 100%;
+    border-bottom: 1px solid #c3c3c3;
+    align-items: stretch;
+    flex-direction: row;
 }    
     
-
-.box-product {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    text-align: center;
-    margin: 10px;
-    width: auto;
-}
-    
-aside {
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
-    font-size: 12px;
-    width: 400px;
-}    
-
 }
 
-*/
+
+
+ .modalstar p {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.btn_modal{
+    width: 35px;
+    margin: 10px;
+}
+     

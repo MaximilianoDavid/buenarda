@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0">
         <meta http-equiv="X-UA-Compatible" content = "ie=edge">
-        <title>Inicio</title>
+        <title>Inicio | Buenarda</title>
         <!--Meta-->
         <meta itemprop="name" content="Bodega Buenarda">
         <meta itemprop="description" content="Mendoza - Argentina">
@@ -28,18 +28,97 @@
         <!--fancy-->
     </head>
     
- <body> 
+ <body onload="modalstart()">
      
+     
+  <script>
+     
+
+function modalstart(){
+  
+  if (localStorage.getItem('Mayor 18') === null || ''){  
+    
+    localStorage.setItem('Mayor 18', '')
+      Swal.fire({
+  title: 'Bienvenido/a',   
+  text: '¿Eres mayor de 18 años?',
+  showDenyButton: true ,
+  confirmButtonText: `SI`,
+  confirmButtonColor:  '#aa3c3b',    
+  denyButtonText: `NO`,
+  denyButtonColor: '#aa3c3b',      
+  icon: 'question',
+  background: '',
+  input: 'checkbox',
+  inputValue: 1,
+  inputPlaceholder:
+    'Acepto los terminos y condiciones',          
+      
+      
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Gracias!', '', 'success')
+    localStorage.setItem('Mayor 18', 'SI')  
+  } else if (result.isDenied) {
+    Swal.fire('No podras realizar comprar desde el catalogo', '', 'info')
+    localStorage.setItem('Mayor 18', 'NO')  
+  }
+})   
+    
+  
+  
+  
+  }
+    
+    
+    
+  if (localStorage.getItem('Mayor 18') === 'NO'){       
+  Swal.fire({
+  title: 'Bienvenido/a',   
+  text: '¿Eres mayor de 18 años?',
+  showDenyButton: true ,
+  confirmButtonText: `SI`,
+  confirmButtonColor:  '#aa3c3b',    
+  denyButtonText: `NO`,
+  denyButtonColor: '#aa3c3b',      
+  icon: 'question',
+  background: '',      
+      
+      
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Entendido', '', 'success')
+    localStorage.setItem('Mayor 18', 'SI')  
+  } else if (result.isDenied) {
+    Swal.fire('No podras realizar comprar desde el catalogo', '', 'info')
+    localStorage.setItem('Mayor 18', 'NO')  
+  }
+})   
+    
+  }
+  
+  
+}
+      
+  </script>   
+     
+     
+
+   
+<div class="modal-start" id="modal_start"></div>     
     
 <header class="ease-in-out">
-     
-      <img src="images/logo.png" class="logo">   
-   
-      <a class="nav-toggle btn btn-primary" id="bars">
+    <div class="navbar_bar"> 
+       <div class="mobile_logo_toggle">
+       <img src="images/logo.png" class="logo">
+       <a class="nav-toggle btn btn-primary" onclick="nav()">
          <i class="fas fa-bars"></i>
-       </a>  
-
-      <nav class="navbar">
+       </a> 
+     </div>
+       <div class="mobile_nav">
+       <nav class="navbar" id="navbar">
        <ul class="nav" id="nav">
             <li class="nav-item active"><a href="index.html" class="nav-link-new">Inicio</a></li>
             <li class="nav-item"><a href="catalogo.html" class="nav-link-new">Catalogo</a></li>
@@ -66,12 +145,10 @@
       </div>        
     </div>
     </nav>   
-    
+      </div> 
+    </div>
 </header>  
-     
 
-     
-     
 
 <main data-aos="fade">
     
@@ -109,30 +186,30 @@
     
     <div class="card" data-aos="zoom-in-up">
        <img src="images/cards/catalogo.svg" alt="..." class="shadow">
-          <a>catalogo</a>
+          <a>Catalogo</a>
             <p>Te invitamos a observar nuestro catalogo de marcas exclusivas.</p>
-            <p><a class="btn btn-secondary" href="catalogo.html">Ver catalogo »</a></p>
+            <p><a class="btn btn-secondary" href="catalogo.html">Ver »</a></p>
     </div>
     
     <div class="card" data-aos="zoom-in-up">
       <img src="images/cards/club.svg" alt="..." class="shadow">
         <a>Club del vino</a>
             <p>Ingresa al club, y participa de grandes premios y descuentos.</p>
-            <p><a class="btn btn-secondary" href="#">Ingresar »</a></p>
+            <p><a class="btn btn-secondary" href="ingresar.html">Ingresar »</a></p>
  
 </div>
     <div class="card" data-aos="zoom-in-up">
   <img src="images/cards/somos.svg" alt="..." class="shadow">
         <a>Nuestra Empresa</a>
-            <p>Te contamos como se fundo y se forma nuestra empresa familiar.</p>
-            <p><a class="btn btn-secondary" href="empresa.html">Conoce »</a></p>
+            <p>Te contamos como esta formada nuestra empresa familiar.</p>
+            <p><a class="btn btn-secondary" href="empresa.html">Conocer »</a></p>
 
 </div>
     <div class="card" data-aos="zoom-in-up">
   <img src="images/cards/tienda.svg" alt="..." class="shadow">
         <a>Tienda</a>
-            <p>Compra en la tienda, y te lo llevamos a tu domicilio.</p>
-            <p><a class="btn btn-secondary" href="catalogo.html">Ir a tienda »</a></p>
+            <p>Compra en la tienda nuestras marca exclusivas.</p>
+            <p><a class="btn btn-secondary" href="catalogo.html">Ir »</a></p>
 
 </div>
 </section>
@@ -145,23 +222,23 @@
          <h6 class="text-uppercase fw-bold mb-4">Ubicacion</h6>
            <p><i class="fas fa-map-marker-alt"></i> Tirasso 2131, Rodeo de la Cruz</p>
            <p>Mendoza - Argentina</p>
-        <button class="btn btn-secondary" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.1037762859587!2d-68.75898554926684!3d-32.895424376533555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0e63a1d39ae5%3A0x2e65cf3a79c3313c!2sTirasso%202131%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1625268412529!5m2!1ses!2sar"  data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "600px"}}}'>Como llegar</button>
+        <button class="btn btn-secondary" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.1037762859587!2d-68.75898554926684!3d-32.895424376533555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0e63a1d39ae5%3A0x2e65cf3a79c3313c!2sTirasso%202131%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1625268412529!5m2!1ses!2sar"  data-fancybox data-options='{"type" : "iframe", "iframe" : {"preload" : false, "css" : {"width" : "600px"}}}'>Comó llegar</button>
    </div>
     </section>
     
      <section class="box-links">
     <h6 class="text-uppercase fw-bold mb-4">FAQ</h6>
         <p><a href="#!" class="text-reset">Consultas</a></p>
-        <p><a href="#!" class="text-reset">Aministracion</a></p>
+        <p><a href="#!" class="text-reset">Actividades</a></p>
         <p><a href="#!" class="text-reset">Trabaja con nosotros</a></p>
     </section>
     
      <section class="box-contact" id="contact">
-    <div class="contact">
+         <div class="contact">
          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-           <p><i class="fas fa-envelope me-3"></i>buenarda@admin.com</p>
-           <p><i class="fas fa-phone me-3"></i>+ 54 261 567 88</p>
-           <p><i class="fas fa-print me-3"></i>+ 54 261 567 89</p>
+           <p><i class="fas fa-envelope me-3"></i>admin@buenarda.com</p>
+           <p><i class="fas fa-phone me-3"></i>+ 54261-5678875</p>
+           <p><i class="fas fa-print me-3"></i>+ 54261-5678985</p>
          </div>
     </section>
     
@@ -184,8 +261,9 @@
 </footer>
       
 </body>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="aos/aos.js"></script>
-        <script src="js/style.js"></script>
+        <script src="js/app.js"></script>
         <script src="fancybox/dist/jquery3.5.1.min.js"></script>
         <script src="fancybox/dist/jquery.fancybox.min.js"></script>
         <script src="bootstrap/js/bootstrap.bundle.js"></script>  
