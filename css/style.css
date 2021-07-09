@@ -81,11 +81,6 @@ header {
     flex-wrap: nowrap;
 }
 
-.show{
-    display: none;
-}
-
-
 .cart-login{display: flex;}
 .navbar-hide{display: none;}
 
@@ -346,6 +341,18 @@ aside {
 .menu_hide{
     display: none;
 }
+
+ .modalstar p {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.btn_modal{
+    width: 35px;
+    margin: 10px;
+}
+     
 
 @media screen and (max-width: 1038px){
   
@@ -684,17 +691,3 @@ header {
 }    
     
 }
-
-
-
- .modalstar p {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-}
-
-.btn_modal{
-    width: 35px;
-    margin: 10px;
-}
-     
