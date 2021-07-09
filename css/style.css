@@ -1,24 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
+.btn-style{
+    width: 90px;
+}
+
+
 .nav-toggle{
     display: none;
 }
 
-/*ZOOM*/
-
-.zoom:hover{
-    transform: scale(1.2);
-    transition: all 1.0s ease;
-    overflow: hidden;
-    background-color: white;
-}
-
-.zoom:not(:hover){
-    transition: all 1.0s ease;
-    overflow: hidden; 
-}
-
-/*ZOOM*/
 
 body{
     padding: 0;
