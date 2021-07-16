@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title>Ingreso | Buenarda</title>
+        <!--Meta-->
+        <meta itemprop="name" content="Bodega Buenarda">
+        <meta itemprop="description" content="Mendoza - Argentina">
+        <meta itemprop="image" content="images/log.png">
+        <meta property="og:image" content="images/log.png">      
+        <link rel="shortcut icon" href="images/icon.ico">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/login.css">
+        <!--fontawesome-->
+        <script src="fonts/fontawesome/css/all.css"></script>
+        <script src="fonts/fontawesome/js/all.js"></script>
+        <!--fontawesome-->
+        <!--fancy-->
+        <link rel="stylesheet" href="fancybox/dist/jquery.fancybox.min.css" />
+        <!--fancy-->
+    </head>
+    
+ <body> 
+      
+<main class="form-signin">
+  <form>
+      
+    <div class="form-logo">
+        <img class="mb-4" src="images/log.png" alt="">
+        <h1 class="h3 mb-3 fw-normal">Ingreso</h1>
+    </div>    
+      
+    <div class="form-ingreso">  
+              <label class="form-label" for="country" >Ingreso de</label>
+        
+              <select class="form-select" id="country" required="">
+                <option value="">Clientes</option>
+                <option>Personal</option>
+                <option>Club del vino</option>   
+              </select>
+        
+              <div class="invalid-feedback">
+                Selecciona un ingreso.
+              </div>
+    </div>
+      
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Ingreso</label>
+    </div>
+      
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Contraseña</label>
+    </div>
+
+    <div class="checkbox">
+      <label class="form-label">
+        <input type="checkbox" value="remember-me" style="margin-right: 5px;">Recordarme
+      </label>
+    </div>
+  
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+      
+    <div class="about_form">
+       <p class="mt-5 mb-3 text-muted">Un proyecto de <a href="https://github.com/MaximilianoDavid" target="_blank">@maxirmx</a></p>  
+    </div>
+      
+      
+  </form>
+</main>    
+     
+
+      
+</body>
+        <script src="fancybox/dist/jquery3.5.1.min.js"></script>
+        <script src="fancybox/dist/jquery.fancybox.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.js"></script> 
+</html>
